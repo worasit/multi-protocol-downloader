@@ -1,11 +1,11 @@
 package com.nongped
 
 
-object Application extends Application with App {
+object Application extends Greeting with App {
   println(greetingMsg)
 }
 
-trait Application {
+trait Greeting {
   lazy val greetingMsg: String = "Hello Scala"
 }
 
