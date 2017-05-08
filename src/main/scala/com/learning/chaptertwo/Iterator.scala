@@ -3,12 +3,11 @@ package com.learning.chaptertwo
 import scala.io.{BufferedSource, Source}
 
 
-object Iterator extends Description {
+object Iterator extends App with Description {
 
   initDescription()
 
   val source: BufferedSource = Source.fromResource("Chapter 2/TX417945_1263.csv")
-
 
 
   source.close
